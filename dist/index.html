@@ -8,35 +8,71 @@
   <title>Graphic preview</title>
 
   <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/grow-highcharts-template_styles.css">
+  <link rel="stylesheet" href="css/unequal-recession_styles.css">
   <!--endbuild-->
 
 </head>
 
 <body>
 
-  <div class="chart-area">
-      <div class="chart-head" id="chart-head">This is a headline</div>
-      <div class="chart-subhead">This is a subdeck or chart title. In some cases, there might be a need for a chart title also.</div>
-      <div class="chart-title">This is a chart title</div>
-      <div class="chart-title-social">Social chart title</div>
-      <div class="chart-container" id="chart-container"></div>
-      <div class="chart-note">Note: Anything that needs an additional note or methodology explanation should go here.</div>
+  <div class="chart-area-unequal-recession">
+      <div class="chart-title">Change in the employment rate since January by income</div>
+      <div class="chart-container" id="chart-container-unequal-recession-1"></div>
+      <div class="chart-note">Note: Data for low-income workers after July 29 is projected. Data is not seasonally-adjusted.</div>
       <div>
         <span class="chart-credit">kiersten schmidt/grow</span>
-        <span class="chart-source">this is the source</span>
+        <span class="chart-source">Opportunity Insights Economic Tracker</span>
+      </div>
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
+
+      <div class="chart-title">Percent in each household net worth bracket who own stocks</div>
+      <div class="chart-container" id="chart-container-unequal-recession-2"></div>
+      <div>
+        <span class="chart-credit">kiersten schmidt/grow</span>
+        <span class="chart-source">Federal Reserve</span>
+      </div>
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
+
+      <div class="chart-title">Percent of net worth in <span style="color: #74c947">stocks</span> and <span style="color: #9a9fa0">real estate</span></div>
+      <div class="chart-container" id="chart-container-unequal-recession-3"></div>
+      <div>
+        <span class="chart-credit">kiersten schmidt/grow</span>
+        <span class="chart-source">Federal Reserve</span>
+      </div>
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
+
+      <div class="chart-title">Median sales price for existing homes</div>
+      <div class="chart-container" id="chart-container-unequal-recession-4"></div>
+      <div>
+        <span class="chart-credit">kiersten schmidt/grow</span>
+        <span class="chart-source">Federal Reserve bank of St. Louis</span>
+      </div>
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
+      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
+
+      <div class="chart-title">Delinquency rate for <span style="color: #74c947">FHA-insured mortgages</span> and <span style="color: #9a9fa0">all mortgages</span></div>
+      <div class="chart-container" id="chart-container-unequal-recession-5"></div>
+      <div class="chart-note">Note: Data includes loans 30 day to 90+ days past due, but excludes loans in the foreclosure process.</div>
+      <div>
+        <span class="chart-credit">kiersten schmidt/grow</span>
+        <span class="chart-source">Mortgage Bankers Association</span>
       </div>
       <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
       <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
   </div>
+
   <div id="chart-fallback"></div>
     
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/data.js"></script>
-  <!-- <script src="http://code.highcharts.com/modules/exporting.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/highcharts-more.js"></script> -->
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+
   <!--build:js js/main.min.js -->
-  <script src="js/grow-highcharts-template_main.js"></script>
+  <script src="js/unequal-recession_main.js"></script>
   <!-- endbuild -->
 </body>
 </html>

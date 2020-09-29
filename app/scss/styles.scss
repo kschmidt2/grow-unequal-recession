@@ -22,7 +22,7 @@ $breakpoint-lg: 717px;
 
 @import "colors";
 
-.chart-area {
+.chart-area-unequal-recession {
   @import "type";
   @import "highcharts";
 
@@ -49,16 +49,109 @@ $breakpoint-lg: 717px;
 
   & .chart-container {
     width: 100%;
-    height: 300px;
+    height: 350px;
     margin-top: -10px;
-    @include sm-md-xl {
-      height: 400px;
-    }
   }
 
   & .grow-logo {
     width: 214px;
     margin-top: 20px;
+  }
+
+  & #chart-container-unequal-recession-1 {
+    .highcharts-color-0 {
+      fill: $green-secondary-5;
+      stroke: $green-secondary-5;
+    }
+    
+    .highcharts-color-1 {
+      fill: $slate-secondary-3;
+      stroke: $slate-secondary-3;
+    }
+    
+    .highcharts-color-2 {
+      fill: $green-secondary-3;
+      stroke: $green-secondary-3;
+    }
+    
+    .highcharts-color-3 {
+      fill: $green-secondary-5;
+      stroke: $green-secondary-5;
+      stroke-dasharray: 5;
+    }
+
+    .highcharts-axis-line {
+      fill: none;
+      stroke: none;
+    }
+
+    .highcharts-yaxis-grid {
+      & path:nth-child(5) {
+        stroke: $slate-secondary-5;
+      }
+    }
+
+    .highcharts-legend-item:nth-child(4){
+      display: none;
+    }
+
+    .highcharts-yaxis-labels {
+      // use this to change the axis label
+      & span:last-child {
+        transform: translate(10px,0) !important;
+        &:after {
+          content: "%";
+      }
+      }
+    }
+    
+  }
+
+  & #chart-container-unequal-recession-2, #chart-container-unequal-recession-3 {
+    height: 250px;
+    @include x-small(){
+      margin-bottom: 30px;
+    }
+    .highcharts-yaxis-labels {
+      // use this to change the axis label
+      & span:first-child {
+        &:after {
+          content: "%";
+      }
+      }
+    }
+  }
+
+  & #chart-container-unequal-recession-4 {
+    height: 250px;
+    @include x-small(){
+      margin-bottom: 30px;
+    }
+    .highcharts-axis-line {
+      fill: none;
+      stroke: none;
+    }
+    & span:last-child {
+      transform: translate(0px,0) !important;
+      &:before {
+        content: "$";
+    }
+    }
+
+  }
+
+  & #chart-container-unequal-recession-5 {
+    height: 250px;
+    .highcharts-lollipop-high {
+      fill: $slate-secondary-4;
+    stroke: $slate-secondary-4;
+    }
+    & span:last-child {
+      transform: translate(10px,0) !important;
+      &:after {
+        content: "%";
+    }
+    }
   }
   
 }
